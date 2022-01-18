@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style: none;
+    outline: none;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #2e2a68;
+}
+
+.wrapper {
+    width: 550px;
+    border-radius: 10px;
+    background-color: #252525;
+    box-shadow: 0 0 10px #333;
+    min-width: 550px;
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .5rem;
+}
+
+.search_box input {
+    /* width: 100%; */
+    border: 1px solid #dbdbdb;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 30px;
+    padding: .5rem 1rem;
+}
+
+.search_box input:focus {
+    border: 1px solid greenyellow;
+}
+
+.account_box {
+    /* padding: 1rem 1rem; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 100%;
+}
+
+.image_box {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.image_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info_box {
+    flex: 1;
+    padding: .5rem;
+}
+
+.account_username {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.account_username h3 {
+    color: #fff;
+}
+
+
+.account_username small {
+    color: rgb(230, 230, 230);
+    transform: translateY(-5px);
+}
+
+.info_box p {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.like_popular {
+    width: 100%;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like_popular div {
+    font-size: 12px;
+    color: #eee;
+}
+
+.momo {
+    color: #fff;
+    padding: 1rem;
+}

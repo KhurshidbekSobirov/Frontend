@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.note {
+    width: 260px;
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.tools {
+    width: 100%;
+    padding: .2rem;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tools button {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.tools button:active {
+    transform: scale(0.9);
+    color: orange;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid red;
+}
+
+.text_content {
+    display: block;
+    width: 100%;
+    height: 250px;
+    padding: .2rem .5rem;
+}
+
+textarea {
+    width: 100%;
+    min-height: 250px;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: .2rem .5rem;
+}
+
+.note .hidden {
+    display: none;
+}
+
+.addNote {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.addNote:active {
+    transform: scale(.99);
+}

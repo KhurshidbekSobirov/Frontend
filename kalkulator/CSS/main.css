@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper{
+    width: 300px;
+    height: 377px;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.ekran{
+    width: inherit;
+    height: 90px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.ekran > .son , .raqam{
+    width: inherit;
+    font-size: 1.7rem;
+    height: 30px;
+    border: inherit;
+    outline: none;
+    text-align: center;
+}
+
+.ekran > .p{
+    width: inherit;
+    font-size: 1.7rem;
+    height: 30px;
+    border: inherit;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.belgilar{
+    width: 300px;
+    /* height: 30px; */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.belgilar > .kopaytirish{
+    width: inherit;
+    height: 35px;
+    margin-top: 4px;
+    background-color: transparent;
+    color: ivory;
+}
+
+.belgilar > .ayrish{
+    width: inherit;
+    height: 35px;
+    background-color: transparent;
+    color: ivory;
+
+}
+
+.belgilar > .qoshish{
+    width: inherit;
+    height: 35px;
+    background-color: transparent;
+    color: ivory;
+
+}
+
+.belgilar > .bolish{
+    width: inherit;
+    height: 35px;
+    background-color: transparent;
+    color: ivory;
+
+}
+
+.belgilar > .qoldiq{
+    width: inherit;
+    height: 35px;
+    background-color: transparent;
+    color: ivory;
+
+}
+
+.belgilar > .daraja{
+    width: inherit;
+    height: 35px;
+    background-color: transparent;
+    color: ivory;
+
+}
+
+.belgilar > .katta{
+    width: inherit;
+    height: 35px;
+    background-color: transparent;
+    color: ivory;
+
+}
+
+.belgilar > .kichik{
+    width: inherit;
+    height: 35px;
+    background-color: transparent;
+    color: ivory;
+
+}

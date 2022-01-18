@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style: none;
+    outline: none;
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;  
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;  
+}
+
+.recipeapp_wrapper {
+    width: 340px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.recipeapp_header {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;    
+    position: relative;
+}
+
+.header_menubar {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_menubar button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.recipeapp_header .logo {
+    color: #e75500;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 .5rem;
+}
+
+.recipeapp_header .search_recipe {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.search_recipe input {
+    border: 1px solid #dbdbdb;
+    border-radius: 30px;
+    padding: .2rem 10px;
+    width: 100%;
+    min-width: 150px;
+}
+
+.search_recipe button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    outline: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.fav_meals {
+    width: 100%;
+    padding: 1rem;
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.fav_meals ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    grid-gap: 10px;
+}
+
+.fav_meals ul li {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    border: 1px dashed #fff;
+    padding: 0.2rem;
+    position: relative;
+}
+
+.fav_meals ul li:hover .remove_meal {
+    display: flex;
+}
+
+.remove_meal {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    font-size: 16px;
+    background-color: rgba(0,0, 0, 0.8);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 500;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.fav_meals ul li .meal_img {
+    display: flex;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.fav_meals ul li .meal_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.fav_meals ul li span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.r_recipe_wrapper {
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.r_recipe_card {
+    width: 100%;
+    /* border-radius: 5px; */
+}
+
+.r_recipe_image {
+    border: 1px dashed #333;
+
+    width: 100%;
+    height: 200px;
+}
+
+.r_recipe_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.r_recipe_title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.r_recipe_title span {
+    font-weight: 600;
+}
+
+.r_recipe_title button {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border: 1px dashed #dbdbdb;
+    background-color: transparent;
+    color: #ccc;
+}
+
+.r_recipe_title button.active {
+    color: rebeccapurple;
+    border: 1px dashed rebeccapurple;
+}
+
+.search_resultblock {
+    display: none;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.search_resultblock::-webkit-scrollbar {
+    width: 5px;
+}
+
+.search_resultblock::-webkit-scrollbar-thumb {
+    background-color: rgb(241, 161, 11);
+    border-radius: 5px;
+}
+
+.search_resultblock::-webkit-scrollbar-thumb:hover {
+    background-color: orange;
+}
+
+.search_result {
+    width: 100%;
+}
+
+.search_result li {
+    padding: .3rem .8rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search_result li:hover {
+    background-color: orange;
+}
+
+.search_result li:not(:last-child) {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.search_result li .meal_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.search_result li span {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+.modal_container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow-y: auto;
+    display: none;
+}
+
+.modal {
+    padding: 1rem;
+    width: 400px;
+    background-color: #fff;
+    margin: 2rem auto;
+}
+
+.modal img {
+   margin-bottom: 1em; 
+}
+
+.modal_closebtn {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}

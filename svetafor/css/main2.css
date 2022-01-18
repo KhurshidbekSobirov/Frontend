@@ -1,0 +1,49 @@
+.wrapper{
+    background: #333;
+    width: 150px;
+    height: 440px;
+    border-radius: 10px;
+    font-size: 70px;
+    text-align: center;
+    padding: 1px 0;
+    border-radius: 6px solid #000;
+    margin: auto;
+}
+.circle{
+    background: #666;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 20px;
+    line-height: 120px;
+    -webkit-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: backcground-color 0.5s ease-out;
+}
+.circleBGColor1{
+    background-color: #0f0;
+}
+.circleBGColor2{
+    background-color: #ff0;
+}
+.circleBGColor3{
+   
+    background-color: #f00;
+}
+.circleBGColor1 {
+    color: #0f0;
+}
+.circleBGColor2 {
+  
+    color: #f00;
+}
+
+
+.circleColor1 {
+  color: #0f0;
+}
+.circleColor2 {
+
+  color: #f00;
+}
